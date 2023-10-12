@@ -2,3 +2,70 @@ body {
     background-color: #333;
     color: #ccc;
 }
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #2240e9;
+    padding: 30px 40px;
+    text-align: left;
+}
+
+/* Clear floats after the header */
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the input */
+input {
+    margin: 0;
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 50px;    
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    margin-left: 10px;
+    padding: 10px;
+    width: 25%;
+    background: #e9e503;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+  
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+#myTaskList {
+    margin-top: 10px;
+}
